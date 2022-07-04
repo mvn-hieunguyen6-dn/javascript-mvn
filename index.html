@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" nnnnnnnnnn mn m kmj n ,.m ko9ucontent="width=device-width, initial-scale=1.0">
+    <title>Demo JS</title>
+   </head> 
+   <body>
+    <script src="day4.js"></script>
+    <section>
+        <div>
+            <h2>- What are the differences between a variable that is: `null`, `undefined`?</h2>
+            <p>+Null là một giá trị gán,có thể gán giá trị null cho bất kỳ biến <br>
+            +Undefined là một biến tồn tại nhưng chưa được khởi tạo YET. Có nghĩa là sau này, tôi có thể quay lại biến của mình và gán cho nó một giá trị mà trước đó nó không có. </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>- What is `use strict`? what are the advantages and disadvantages to using it?</h2>
+            <p>Use trict là  một đoạn lệnh được khai báo use strict thì tất cả các dòng code ở phía dưới dòng khai báo use strict sẽ được quản lý một cách nghiêm ngặt hơn về cú pháp.</p>
+            <p>Ưu điểm :
+1. Loại bỏ một số khía cạnh không hợp lý và không chính xác của cú pháp Javascript và giảm một số hành vi kỳ lạ;
+
+2. Loại bỏ một số khía cạnh không an toàn của hoạt động mã và đảm bảo an toàn của hoạt động mã;
+
+3. Cải thiện hiệu quả của trình biên dịch và tăng tốc độ chạy;
+
+4. Mở đường cho phiên bản Javascript mới trong tương lai.
+            </p>
+            <p> Nhược Điểm :
+                1.Không chấp nhận khai báo các keyword
+                2.Không cho phép khai báo biến trong eval
+                3.Không sử dụng được with
+                4.Không được phép ghi đè lên thuộc tính chỉ được phép đọc.
+            </p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2> - What are the differences between `==` and `===`? Write an example for each case (if any)?</h2>
+            <p>==: so sánh giá trị </p>   
+            <p>==: so sánh giá trị và kiểu dữ liệu </p>
+            <script>
+          document.write(26 == "26");
+          document.write('<br>')
+          document.write(26 === "a");
+            </script> </p>
+        </div>
+       </section>
+    <section>
+        <div>
+            <h2>Give a list of `Falsy` values in Javascript.</h2>
+            <p>Danh sách các giá trị  falsy: undefined, null, false, 0, -0, 0n, NaN</p>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>- Give an example for each of the following methods in Javascript</h2>
+            <div>
+                <h3>Map</h3>
+                <p>
+                    <script>
+                    const ExMap = [200, 350, 1500, 5000];
+                    document.write(ExMap.map((item)=> item * 0.75))
+                    </script>
+                </p>
+                <h3>Fiter</h3>
+                <p>
+                    <script>
+                    const prices = [25, 30,15, 55, 40, 10];
+                     document.write(prices.filter((price)=> price >=30))
+              </script> 
+               <h3>Reduce</h3>
+               <p>
+                   <script>
+                   const weeklyExpenses = [200, 350, 1500, 5000, 450, 680, 350];
+                   document.write(weeklyExpenses.reduce((first, last) => first + last))
+             </script>         
+             <h3>Some</h3>
+             <p>
+                 <script>
+                const numS = [14,16,18];
+                document.write(numS.some((numS) => numS <18))
+           </script>         
+              </p>
+             </div>
+    </section>
+    
+    
+   </body>
+</html>
